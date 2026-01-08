@@ -10,5 +10,10 @@
          <item name="colorPrimary">@color/blue_variant</item>
     </style>
 
+    <style name="Theme.Result" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/yellow</item>
+    </style>
+
     <style name="Theme.GameOfMathemetics" parent="Base.Theme.GameOfMathemetics" />
 </resources>
