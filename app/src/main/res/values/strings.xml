@@ -3,4 +3,8 @@
     <string name="addition">Addition</string>
     <string name="subtraction">Subtraction</string>
     <string name="multiplication">Multiplication</string>
+    <string name="write_your_answer_here">Write your answer here</string>
+    <string name="ok">OK</string>
+    <string name="next">NEXT</string>
+    <string name="the_question_is">The question is</string>
 </resources>

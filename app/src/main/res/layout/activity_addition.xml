@@ -10,6 +10,7 @@
     tools:context=".AdditionActivity">
 
     <LinearLayout
+        android:id="@+id/horizontal_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -25,7 +26,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -45,7 +46,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textLife"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -65,7 +66,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -76,26 +77,27 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/questionText"
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
-        android:background="@android:color/system_accent1_300"
+        android:background="@color/purple"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/the_question_is"
         android:textColor="@color/white"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/answerText"
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
-        android:background="@android:color/system_accent1_300"
+        android:background="@color/purple"
         android:ems="10"
         android:gravity="center"
-        android:hint="Write your answer here"
+        android:hint="@string/write_your_answer_here"
         android:inputType="number"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="24sp" />
 
@@ -113,7 +115,8 @@
             android:layout_weight="1"
             android:background="@drawable/buttono_shape"
             android:backgroundTint="@null"
-            android:text="OK"
+            android:text="@string/ok"
+            android:textColor="@color/blue"
             android:textSize="20sp" />
 
         <Button
@@ -124,7 +127,8 @@
             android:layout_weight="1"
             android:background="@drawable/buttono_shape"
             android:backgroundTint="@null"
-            android:text="NEXT"
+            android:text="@string/next"
+            android:textColor="@color/blue"
             android:textSize="20sp" />
     </LinearLayout>
 
