@@ -7,4 +7,7 @@
     <string name="ok">OK</string>
     <string name="next">NEXT</string>
     <string name="the_question_is">The question is</string>
+    <string name="sorry_your_answer_is_wrong">Sorry, your answer is wrong</string>
+    <string name="congratulations_the_answer_is_correct">Congratulations, the answer is correct</string>
+    <string name="sorry_your_time_is_up">Sorry, your time is up!</string>
 </resources>

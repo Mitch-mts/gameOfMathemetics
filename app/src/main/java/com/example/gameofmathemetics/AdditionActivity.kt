@@ -42,6 +42,7 @@ class AdditionActivity : AppCompatActivity() {
 
         additionBinding.ok.setOnClickListener {
             val input = additionBinding.answerText.text.toString()
+
             if(input == "") {
                 Toast.makeText(this, "Please enter an answer", Toast.LENGTH_SHORT).show()
             } else {
@@ -51,11 +52,14 @@ class AdditionActivity : AppCompatActivity() {
                 if(userAnswer == correctAnswer) {
                     userScore += 10
                     additionBinding.textScore.text = userScore.toString()
-                    additionBinding.questionText.text = "Congratulations, the answer is correct"
+                    additionBinding.questionText.text =
+                        getString(R.string.congratulations_the_answer_is_correct)
                 } else {
                     userLife--
                     additionBinding.textLife.text = userLife.toString()
-                    additionBinding.questionText.text = "Sorry, your answer is wrong"
+                    additionBinding.questionText.text =
+                        getString(R.string.sorry_your_answer_is_wrong)
+                    Toast.makeText(applicationContext, "You have $userLife chances remaining", Toast.LENGTH_SHORT).show()
                 }
 
             }
@@ -64,7 +68,6 @@ class AdditionActivity : AppCompatActivity() {
         additionBinding.next.setOnClickListener {
             pauseTimer()
             resetTimer()
-            gameContinue()
             additionBinding.answerText.text.clear()
 
             if(userLife == 0) {
@@ -108,7 +111,7 @@ class AdditionActivity : AppCompatActivity() {
 
                userLife--
                additionBinding.textLife.text = userLife.toString()
-               additionBinding.questionText.text = "Sorry, your time is up!"
+               additionBinding.questionText.text = getString(R.string.sorry_your_time_is_up)
 
            }
 
