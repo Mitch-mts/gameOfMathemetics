@@ -89,8 +89,13 @@ class SubtractionActivity : AppCompatActivity() {
         val firstNumber = Random.nextInt(0, 100)
         val secondNumber = Random.nextInt(0, 100)
 
-        subtractionBinding.questionText.text = "$firstNumber - $secondNumber"
-        correctAnswer = firstNumber - secondNumber
+        if(firstNumber < secondNumber ) {
+            subtractionBinding.questionText.text = "$secondNumber - $firstNumber"
+            correctAnswer = secondNumber - firstNumber
+        } else {
+            subtractionBinding.questionText.text = "$firstNumber - $secondNumber"
+            correctAnswer = firstNumber - secondNumber
+        }
 
         startTimer()
 
